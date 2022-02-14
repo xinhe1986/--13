@@ -1,0 +1,15 @@
+// 修饰符
+			var re = /m/gi;
+			var re = new RegExp("m","gi");	
+		//正则表达式可以调用的方法
+			var str16 = "abc123cde2464jdklasj567fdsa";
+			var regexp = /\d+/;
+			var result1 = regexp.exec(str16);
+			console.log(result1);
+		//有g修饰符
+			var str17 = "abc123cde2464jdklasj567fdsa";
+			var regexp1 = /\d+/g;
+			var result;
+			while (result = regexp1.exec(str17)) {
+				console.log(result);
+			};
